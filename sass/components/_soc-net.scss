@@ -1,0 +1,35 @@
+.soc-net {
+   display: flex;
+   justify-content: center;
+   &-icon {
+      fill: currentColor;
+   }
+}
+
+.soc-net-item {
+   margin-left: 10px;
+   &:first-child {
+      margin-left: 0;
+   }
+}
+
+.soc-net-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   color: $icon-color;
+
+   transition: color 250ms $cubic, background-color 250ms $cubic;
+   &:hover,
+   &:focus {
+      color: $white-main-color;
+      background-color: $accent-color;
+   }
+   &:first-child {
+      margin-left: 0;
+   }
+}
