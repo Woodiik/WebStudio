@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +43,7 @@
             <div class="contacts-block">
 
                <a class="contacts" href="mailto:info@devstudio.com">
-                  <svg class="contacts-icon icon-firts-child" width="16" height="12">
+                  <svg class="contacts-icon icon-firts" width="16" height="12">
                      <use href="./img/icons.svg#icon-envelope">
 
                      </use>
@@ -51,7 +51,7 @@
                   info@devstudio.com
                </a>
                <a class="contacts" href="tel:+380961111111">
-                  <svg class="contacts-icon" width="10" height="16">
+                  <svg class="contacts-icon icon-second" width="10" height="16">
                      <use href="./img/icons.svg#icon-smartphone-1">
                      </use>
                   </svg>
@@ -76,8 +76,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img1-desktop.jpg 1x, ./img/projects/img1-desktop@2x.jpg 2x"
-                           src="./img/projects/img1-desktop.jpg" alt="Відкритий веб-сайт" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img1-desktop.jpg 1x, ./img/projects/img1-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img1-tablet.jpg 1x, ./img/projects/img1-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img1.jpg 1x, ./img/projects/img1@2x.jpg 2x"
+                              src="./img/projects/img1.jpg" alt="Відкритий веб-сайт" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -95,8 +101,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img2-desktop.jpg 1x, ./img/projects/img2-desktop@2x.jpg 2x"
-                           src="./img/projects/img2-desktop.jpg" alt="Постер баскетболу" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img2-desktop.jpg 1x, ./img/projects/img2-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img2-tablet.jpg 1x, ./img/projects/img2-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img2.jpg 1x, ./img/projects/img2@2x.jpg 2x"
+                              src="./img/projects/img2.jpg" alt="Постер баскетболу" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -114,8 +126,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img3-desktop.jpg 1x, ./img/projects/img3-desktop@2x.jpg 2x"
-                           src="./img/projects/img3-desktop.jpg" alt="Логотип компанії" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img3-desktop.jpg 1x, ./img/projects/img3-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img3-tablet.jpg 1x, ./img/projects/img3-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img3.jpg 1x, ./img/projects/img3@2x.jpg 2x"
+                              src="./img/projects/img3.jpg" alt="Логотип компанії" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -133,8 +151,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img4-desktop.jpg 1x, ./img/projects/img4-desktop@2x.jpg 2x"
-                           src="./img/projects/img4-desktop.jpg" alt="Великі навушники" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img4-desktop.jpg 1x, ./img/projects/img4-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img4-tablet.jpg 1x, ./img/projects/img4-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img4.jpg 1x, ./img/projects/img4@2x.jpg 2x"
+                              src="./img/projects/img4.jpg" alt="Великі навушники" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -152,8 +176,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img5-desktop.jpg 1x, ./img/projects/img5-desktop@2x.jpg 2x"
-                           src="./img/projects/img5-desktop.jpg" alt="Коробки з логотипом" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img5-desktop.jpg 1x, ./img/projects/img5-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img5-tablet.jpg 1x, ./img/projects/img5-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img5.jpg 1x, ./img/projects/img5@2x.jpg 2x"
+                              src="./img/projects/img5.jpg" alt="Коробки з логотипом" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -171,8 +201,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img6-desktop.jpg 1x, ./img/projects/img6-desktop@2x.jpg 2x"
-                           src="./img/projects/img6-desktop.jpg" alt="Відкритий веб-сайт" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img6-desktop.jpg 1x, ./img/projects/img6-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img6-tablet.jpg 1x, ./img/projects/img6-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img6.jpg 1x, ./img/projects/img6@2x.jpg 2x"
+                              src="./img/projects/img6.jpg" alt="Відкритий веб-сайт" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -190,8 +226,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img7-desktop.jpg 1x, ./img/projects/img7-desktop@2x.jpg 2x"
-                           src="./img/projects/img7-desktop.jpg" alt="Відкрита книга" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img7-desktop.jpg 1x, ./img/projects/img7-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img7-tablet.jpg 1x, ./img/projects/img7-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img7.jpg 1x, ./img/projects/img7@2x.jpg 2x"
+                              src="./img/projects/img7.jpg" alt="Відкрита книга" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -209,8 +251,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img8-desktop.jpg 1x, ./img/projects/img8-desktop@2x.jpg 2x"
-                           src="./img/projects/img8-desktop.jpg" alt="Ярлик компанії" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img8-desktop.jpg 1x, ./img/projects/img8-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img8-tablet.jpg 1x, ./img/projects/img8-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img8.jpg 1x, ./img/projects/img8@2x.jpg 2x"
+                              src="./img/projects/img8.jpg" alt="Ярлик компанії" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -228,8 +276,14 @@
                <li class="projects-list-item">
                   <div class="projects-img-thumb">
                      <a href="./index.html">
-                        <img srcset="./img/projects/img9-desktop.jpg 1x, ./img/projects/img9-desktop@2x.jpg 2x"
-                           src="./img/projects/img9-desktop.jpg" alt="Відкритий веб-сайт" class="project-img" />
+                        <picture>
+                           <source srcset="./img/projects/img9-desktop.jpg 1x, ./img/projects/img9-desktop@2x.jpg 2x"
+                              media="(min-width:1200px)">
+                           <source srcset="./img/projects/img9-tablet.jpg 1x, ./img/projects/img9-tablet@2x.jpg 2x"
+                              media="(min-width:768px)">
+                           <img srcset="./img/projects/img9.jpg 1x, ./img/projects/img9@2x.jpg 2x"
+                              src="./img/projects/img9.jpg" alt="Відкритий веб-сайт" class="project-img" />
+                        </picture>
                      </a>
                      <div class="projects-text-thumb">
                         <p class="projects-list-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
@@ -303,6 +357,28 @@
          </div>
       </div>
    </footer>
+   <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-icon js-close-menu">
+         <svg class="icon-close-40px" width="40" height="40">
+            <use href="./img/icons.svg#icon-close"></use>
+         </svg>
+      </button>
+      <ul class="mobile-menu">
+         <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Студія</a></li>
+         <li class="mobile-menu-page"><a class="menu-link" href="./portfolio.html">Портфоліо</a></li>
+         <li class="mobile-menu-page"><a class="menu-link" href="./index.html">Контакти</a></li>
+      </ul>
+      <div class="mobile-menu-contacts">
+         <a class="mobile-menu-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+         <a class="mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+         <ul class="mobile-menu-soc">
+            <li class="menu-soc-item"><a class="menu-soc-item-link" href="">Instagram</a></li>
+            <li class="menu-soc-item"><a class="menu-soc-item-link" href="">Twitter</a></li>
+            <li class="menu-soc-item"><a class="menu-soc-item-link" href="">Facebook</a></li>
+            <li class="menu-soc-item"><a class="menu-soc-item-link" href="">LinkedIn</a></li>
+         </ul>
+      </div>
+   </div>
    <script src="./js/mobile-menu.js"></script>
 </body>
 
