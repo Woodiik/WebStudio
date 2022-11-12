@@ -79,7 +79,9 @@
    }
 }
 .footer-address {
-   text-align: left;
+   @media screen and (min-width: 1200px) {
+      text-align: left;
+   }
 
    &-name {
       margin-bottom: 8px;
@@ -99,13 +101,17 @@
 .footer-text {
    display: block;
    margin-bottom: 20px;
-
    font-weight: 700;
    font-size: 14px;
    line-height: 16px;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   text-align: center;
    color: $white-main-color;
+
+   @media screen and (min-width: 1200px) {
+      text-align: left;
+   }
 }
 
 .subscribe-field {
@@ -129,7 +135,7 @@
 }
 
 .subscribe-input {
-   width: 450px;
+   width: 100%;
    padding: 15px 16px;
    margin-right: 12px;
    margin-bottom: 20px;

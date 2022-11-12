@@ -51,7 +51,6 @@
 }
 
 .projects-list-item {
-   width: 354px;
    margin: 15px;
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -64,8 +63,9 @@
    position: relative;
    overflow: hidden;
 }
-.projet-img {
+.project-img {
    width: 450px;
+   height: 294px;
    @media screen and (min-width: 768px) {
       width: 354px;
    }
@@ -90,6 +90,7 @@
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    pointer-events: none;
+   overflow: hidden;
 }
 
 .projects-list-item:hover .projects-text-thumb {
@@ -105,6 +106,10 @@
 }
 
 .item-box {
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 354px;
+   }
+
    border: 1px solid #eeeeee;
    border-top: none;
    padding: 20px 24px;

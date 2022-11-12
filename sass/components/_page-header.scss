@@ -24,6 +24,9 @@
    @media screen and (max-width: 767px) {
       display: none;
    }
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 96px;
+   }
    margin-left: 88px;
 }
 .contacts-block {
@@ -39,17 +42,16 @@
    }
 }
 .pages-list-item {
-   margin-right: 50px;
-   &:last-child {
-      margin-right: 96px;
+   @media screen and (min-width: 768px) {
+      &:not(:first-child) {
+         margin-left: 50px;
+      }
    }
 }
 .page {
    position: relative;
 
    display: block;
-   padding-top: 16px;
-   padding-bottom: 16px;
 
    font-weight: 500;
    font-size: 14px;
@@ -59,7 +61,7 @@
    color: $main-text-color;
    font-style: normal;
 
-   transition: color 250ms $cubic;
+   transition: $cubic;
 
    padding-bottom: 32px;
    padding-top: 32px;
@@ -85,14 +87,5 @@
    &:hover,
    &:focus {
       color: $accent-color;
-   }
-}
-
-.pages-list-item {
-   @media screen and (min-width: 1200px) {
-      margin-left: 50px;
-      &:first-child {
-         margin-left: 92px;
-      }
    }
 }
